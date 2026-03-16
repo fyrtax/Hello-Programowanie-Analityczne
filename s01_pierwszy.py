@@ -109,15 +109,3 @@ def moj_dow(*pos, **naz):  # *args, **kwargs
 
 
 moj_dow(1, 2, 3, 4, e=6, f=3, w=1)
-
-
-class A:
-    def __init__(self, a):
-        self.a = a
-
-    def show(self):
-        print(self.a)
-
-
-a = A(7)
-a.show()
