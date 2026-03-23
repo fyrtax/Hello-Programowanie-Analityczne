@@ -4,3 +4,14 @@ __pycache__/
 *$py.class
 .idea
 *.lock
+*.xml
+*.asc
+*.gfs
+*.gml
+*.xsd
+*.gpkg
+*.tif
+/w4/images
+/w4/labels
+/w2/images
+/w2/deforestation_analysis/images
