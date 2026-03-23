@@ -1,0 +1,28 @@
+BoxLayout:
+    orientation: 'vertical'
+    Widget:
+        id: naszekran
+        canvas.before:
+            Color:
+                rgba: 0.2, 0.1, 0.1, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        on_touch_down: app.dotyk(args, naszekran)
+    NaszePrzyc:
+        id: przyc
+        size_hint_y: 0.2
+        Button:
+            text: 'Linia'
+            on_press: przyc.rysuj('linia')
+        Button:
+            text: 'Kółko'
+            on_press: przyc.rysuj('kolko')
+        Button:
+            text: 'Prostokąt'
+            on_press: przyc.rysuj('prost')
+        Button:
+            text: 'Anim'
+            on_press: przyc.start_anim()
+    AsyncImage:
+        source: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Collage_of_Nine_Dogs.jpg"
