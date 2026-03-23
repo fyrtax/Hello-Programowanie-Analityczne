@@ -1,0 +1,40 @@
+<LewyPrzyc>
+    size_hint_x: 0.2
+    cos: 14
+<NaszSc1>
+    BoxLayout:
+        Label:
+            text: 'Pierwszy ekran'
+        Button:
+            text: 'Drugi'
+            on_press: root.switch(root, 'drugi', 'left')
+
+<NaszSc2>
+    BoxLayout:
+        LewyPrzyc:
+            text: 'Pierwszy'
+            on_press: root.switch(root, 'pierwszy', 'right')
+        Label:
+            text: 'Drugi ekran'
+        Button:
+            text: 'Trzeci'
+            on_press: root.switch(root, 'trzeci', 'left')
+
+<NaszSc3>
+    BoxLayout:
+        Button:
+            text: 'Drugi'
+            on_press: root.switch(root, 'drugi', 'right')
+        Label:
+            text: 'Trzeci ekran'
+        Button:
+            text: 'Czwaty'
+            on_press: root.switch(root, 'czwarty', 'left')
+        
+<NaszSc4>
+    BoxLayout:
+        Button:
+            text: 'Trzeci'
+            on_press: root.switch(root, 'trzeci', 'right')
+        Label:
+            text: 'Czwarty ekran'
