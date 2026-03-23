@@ -1,0 +1,27 @@
+BoxLayout:
+    orientation: 'vertical'
+    Label:
+        size_hint_y: 0.1
+        text: 'Nasz Edytor'
+    BoxLayout:
+        size_hint_y: 0.08
+        orientation: 'horizontal'
+        Button:
+            size_hint_x: 0.15
+            text: 'Open'
+            on_press: app.przycisk_open(tiNazwa, tiNaszTekst)
+        TextInput:
+            id: tiNazwa
+            multiline: False
+            text: 'jakisplik.txt'
+        Button:
+            size_hint_x: 0.15
+            text: 'Save'
+            on_press: app.zapisz(tiNazwa, tiNaszTekst)
+    TextInput:
+        id: tiNaszTekst
+        multiline: True
+    Label:
+        size_hint_y: 0.05
+        id: lbNaszTekst
+        text: 'tekst'
